@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300');
+
+body {
+	font-family: 'Lato', sans-serif;
+	
+}
+
+hr {
+	border:none;
+	border-bottom: 4px solid #eee;
+}
+
+.featured {
+	margin-top:30px;
+	color: #bcbbbb;
+}
+
+.header {
+	margin-top:30px;	
+}
+
+.light {
+	font-weight:100;
+	font-size:60px;
+}
+
+.pink {
+	color:maroon;
+}
+
+.image-width {
+	max-width:100%;	
+}
+
+.right {
+	position:relative;
+	right:0;
+}
+
+.center {
+	position:relative;
+	text-align:center;	
+}
+@media only screen and (max-width:1200px) {
+	.padding {
+		margin: 15px;
+		max-width:100%;
+		height:auto;
+		}
+	
+	.featured {
+		color: black;	
+	}
+}
+
+.navigation {
+	position:absolute;
+	top:10%;
+	right:10%;	
+	text-align:right;
+	
+}
+.navigation ul {
+	font-family:'Lato', sans-serif;
+	text-transform:uppercase;
+	list-style:none;
+	font-size:1em;
+}
+
+.navigation li {
+	display:inline-block;
+}
+
+.navigation a {
+	color:#BEBEBE;
+	text-decoration:none;
+	padding:12px 20px;
+}
+
+.navigation a:hover {
+	color:black;
+}
+
+@media only screen and (max-width:760px) {
+	.navigation {
+		position:absolute;
+		top:30%;
+		left:0;
+	}}
+	
+@media only screen and (max-width:800px) {
+	.navigation {
+		position:absolute;
+		display:block;
+			
+	}
+	
+	.toggle-nav {
+		padding:20px;
+		float:right;
+		display:inline-block;
+		background:#303030;
+		color:#777;
+		font-size:20px;
+		transition:color linear 0.15s	
+	}
+	
+	.toggle-nav:hover, toggle-nav.active {
+		text-decoration:none;
+		color:#66a992;
+	}
+}
+
+.toggle-nav {
+	display:none;
+}
